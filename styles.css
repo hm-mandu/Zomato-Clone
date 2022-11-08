@@ -226,7 +226,258 @@ header {
   letter-spacing: 0.5px;
 }
 
+.get_the_app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 251, 247);
+  width: 100%;
+  padding: 3rem 6rem;
+}
+
+.get_the_app .semi_container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.get_the_app .semi_container .left {
+  flex: 2;
+}
+
+.get_the_app .semi_container .left img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.get_the_app .semi_container .right {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.get_the_app .semi_container .right h1 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.get_the_app .semi_container .right .p {
+  font-size: 0.8rem;
+}
+
+.semi_container .right .radio_button_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.semi_container .right .radio_button_container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.right .radio_button_container div input {
+  height: 15px;
+  width: 15px;
+  accent-color: rgb(239, 79, 95);
+}
+
+.semi_container .right .input_container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input_container {
+  flex-wrap: wrap;
+}
+
+.input_container button,
+.input_container input {
+  padding: 10px 12px;
+}
+
+.input_container input {
+  flex: auto;
+  border: 1.5px solid grey;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input_container button {
+  border: none;
+  background-color: rgb(239, 79, 95);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right .download_app_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.download_app_container h5 {
+  font-size: 400;
+  color: grey;
+}
+
+.download_app_container div {
+  display: flex;
+  gap: 1rem;
+}
+
+.download_app_container div img {
+  width: 35%;
+}
+
+.footer {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.footer_section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.footer_section1 img {
+  width: 120px;
+}
+
+.section1_buttonContainer {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.section1_buttonContainer button {
+  padding: 5px;
+  width: 90px;
+  border: 1px solid grey;
+  background: transparent;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navigation_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+  padding: 3rem 0;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: #696969;
+  font-size: 14px;
+  font-weight: 350;
+  margin: 0;
+}
+
+.footer_link:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.link_container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link_container h5 {
+  color: black;
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.social_links_container button {
+  background-color: black;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.social_links_container button i {
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_section_logos {
+  width: 100%;
+}
+
+.disclaimer {
+  width: 90%;
+  margin: auto;
+  color: grey;
+  font-size: 12px;
+  border-top: 1px solid grey;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
 /* Media */
+
+@media only screen and(max-width:1300px) {
+  .get_the_app .semi_container .left,
+  .get_the_app .semi_container .right {
+    flex: 1;
+  }
+  .get_the_app .semi_container {
+    width: 80%;
+  }
+}
+
+@media only screen and(max-width:900px) {
+  .get_the_app {
+    padding: 2rem;
+  }
+  .get_the_app .semi_container {
+    width: 90%;
+  }
+  .navigation_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and(max-width:700px) {
+  .get_the_app .semi_container .left,
+  .get_the_app .semi_container .right {
+    padding: 3rem;
+  }
+  .get_the_app .semi_container {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .navbar_menu_container .user_icon {
     display: flex;
@@ -257,5 +508,14 @@ header {
   .hero_section_title {
     font-size: 20px;
     width: 95%;
+  }
+  .navigation_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and(max-width: 300px) {
+  .navigation_container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
