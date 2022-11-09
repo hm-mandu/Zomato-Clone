@@ -34,7 +34,7 @@ header {
 
 .navbar_menu_container {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 .navbar_menu_container .user_icon {
@@ -141,9 +141,18 @@ header {
   font-size: 12px;
 }
 
+/* This is container popular location */
+
+/* This is container collections */
+
+.collections {
+  width: 75%;
+  margin-left: 12%;
+}
+
 .collections h1 {
   font-weight: 500;
-  margin-left: 10%;
+  margin-left: 2%;
 }
 
 .collections .sub_heading_container {
@@ -249,7 +258,7 @@ header {
 }
 
 .get_the_app .semi_container .left img {
-  width: 100%;
+  width: 75%;
   object-fit: cover;
   object-position: center;
 }
@@ -326,7 +335,7 @@ header {
 }
 
 .download_app_container h5 {
-  font-size: 400;
+  font-weight: 400;
   color: grey;
 }
 
@@ -347,7 +356,8 @@ header {
 
 .explore h1 {
   font-weight: 400;
-  padding: 10px;
+  padding: 12px;
+  margin-left: 2%;
   font-size: 30px;
 }
 
@@ -355,8 +365,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: left;
-  width: 90%;
+  width: 85%;
   flex-direction: column;
+  padding-left: 2%;
 }
 
 .choose_explore {
@@ -412,9 +423,11 @@ header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
-  width: 90%;
+  width: 75%;
   margin: auto;
   padding: 3rem 0;
+  margin-left: 12%;
+  /* margin-right: 0; */
 }
 
 .footer_link {
@@ -466,7 +479,7 @@ header {
 }
 
 .disclaimer {
-  width: 90%;
+  width: 75%;
   margin: auto;
   color: grey;
   font-size: 12px;
