@@ -339,6 +339,38 @@ header {
   width: 35%;
 }
 
+/* This is Explore Option Container */
+.explore {
+  background-color: #fcfcfc;
+  padding: 0 0 2% 10%;
+}
+
+.explore h1 {
+  font-weight: 400;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.explore_more {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  width: 90%;
+  flex-direction: column;
+}
+
+.choose_explore {
+  border: 1px solid rgb(232, 232, 232);
+  padding: 18px 20px;
+  border-radius: 8px;
+  margin: 8px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #1c1c1c;
+  background-color: white;
+}
+
+/* This is the Footer Part */
 .footer {
   width: 100%;
   background-color: #f8f8f8;
