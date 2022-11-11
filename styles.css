@@ -142,6 +142,56 @@ header {
 }
 
 /* This is container popular location */
+.popular_loc {
+  width: 75%;
+  margin: 8% 12%;
+}
+
+.popular_loc h1 {
+  font-weight: 300;
+  font-size: 36px;
+  color: #363636;
+  padding-bottom: 20px;
+}
+
+.popular_location {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.town_name1,
+.town_name2,
+.town_name3 {
+  display: flex;
+  font-weight: 300;
+  font-size: 20px;
+  border: 1px solid rgb(232, 232, 232);
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: #1c1c1c;
+  cursor: pointer;
+  /* display: inline-block; */
+}
+
+.town_name1:hover,
+.town_name2:hover,
+.town_name3:hover {
+  box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+}
+
+.see_more {
+  display: flex;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 12px 15px;
+  align-items: center;
+  color: #000000;
+  justify-content: center;
+  cursor: pointer;
+}
 
 /* This is container collections */
 
@@ -385,13 +435,14 @@ header {
 .footer {
   width: 100%;
   background-color: #f8f8f8;
+  padding: 48px 0px 22px;
 }
 
 .footer_section1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 75%;
   margin: auto;
   flex-wrap: wrap;
   gap: 2.5rem;
@@ -556,6 +607,9 @@ header {
   }
   .navigation_container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .popular_location {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
